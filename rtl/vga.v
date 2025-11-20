@@ -32,7 +32,6 @@ localparam integer VFrontPorchTicks   = `GET_V_FRONT_PORCH_TICKS(MODE);
 localparam integer VTicks             = `GET_V_TICKS(MODE);
 
 // Printable pixels include border and active video pixels
-// TODO: cambiar nombre printable por screen
 `define IS_PRINTABLE_PIXEL ((r_hcount > HSyncPulseTicks +             \
                                         HBackPorchTicks - 1) &&       \
                             (r_hcount < HTicks - HFrontPorchTicks) && \
