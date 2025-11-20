@@ -1,0 +1,8 @@
+set_io clk_i     49
+set_io button1_i 34
+set_io button2_i 33
+set_io red_o      2
+set_io green_o    1
+set_io blue_o     4
+set_io hsync_no   3
+set_io vsync_no   8

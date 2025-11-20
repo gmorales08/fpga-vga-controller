@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.124 (w)1999-2025 BSI
+[*] Thu Nov 20 10:15:12 2025
+[*]
+[dumpfile] "/home/gabriel/gmd/0PROGRAMACION/FPGA/0PROYECTOS/fpga-vga/build/palette_tb.vcd"
+[dumpfile_mtime] "Thu Nov 20 10:14:45 2025"
+[dumpfile_size] 1059
+[savefile] "/home/gabriel/gmd/0PROGRAMACION/FPGA/0PROYECTOS/fpga-vga/palette_tb.gtkw"
+[timestart] 0
+[size] 1280 712
+[pos] -46 -46
+*-12.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] palette_tb.
+[sst_width] 209
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 196
+@28
+palette_tb.clk
+palette_tb.cont[2:0]
+palette_tb.PAL.color_select_in[2:0]
+@23
+palette_tb.PAL.color_out[17:0]
+[pattern_trace] 1
+[pattern_trace] 0

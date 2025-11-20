@@ -1,0 +1,96 @@
+`ifndef VGA_VH
+`define VGA_VH
+
+`include "common.vh"
+
+`define GET_H_SYNC_PULSE_TICKS(MODE) (          \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 96 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 96 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 96 : -1 \
+)
+
+`define GET_H_BACK_PORCH_TICKS(MODE) (          \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 40 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 40 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 40 : -1 \
+)
+
+`define GET_H_LEFT_BORDER_TICKS(MODE) (        \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 8 : -1 \
+)
+
+`define GET_H_ACTIVE_VIDEO_TICKS(MODE) (         \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 640 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 640 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 640 : -1 \
+)
+
+`define GET_H_RIGHT_BORDER_TICKS(MODE) (       \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 8 : -1 \
+)
+
+`define GET_H_FRONT_PORCH_TICKS(MODE) (        \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 8 : -1 \
+)
+
+`define GET_H_TICKS(MODE) (           \
+    `GET_H_SYNC_PULSE_TICKS(MODE)   + \
+    `GET_H_BACK_PORCH_TICKS(MODE)   + \
+    `GET_H_LEFT_BORDER_TICKS(MODE)  + \
+    `GET_H_ACTIVE_VIDEO_TICKS(MODE) + \
+    `GET_H_RIGHT_BORDER_TICKS(MODE) + \
+    `GET_H_FRONT_PORCH_TICKS(MODE)    \
+)
+
+`define GET_V_SYNC_PULSE_TICKS(MODE) (         \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 2 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 2 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 2 : -1 \
+)
+
+`define GET_V_BACK_PORCH_TICKS(MODE) (          \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 33 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 33 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 33 : -1 \
+)
+
+`define GET_V_TOP_BORDER_TICKS(MODE) (         \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 8 : -1 \
+)
+
+`define GET_V_ACTIVE_VIDEO_TICKS(MODE) (         \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 480 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 480 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 480 : -1 \
+)
+
+`define GET_V_BOTTOM_BORDER_TICKS(MODE) (      \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 8 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 8 : -1 \
+)
+
+`define GET_V_FRONT_PORCH_TICKS(MODE) (        \
+    (MODE == `MODE_640X480X1BPPX60HZ) ? 2 :    \
+    (MODE == `MODE_640X480X2BPPX60HZ) ? 2 :    \
+    (MODE == `MODE_640X480X3BPPX60HZ) ? 2 : -1 \
+)
+
+`define GET_V_TICKS(MODE) (            \
+    `GET_V_SYNC_PULSE_TICKS(MODE)    + \
+    `GET_V_BACK_PORCH_TICKS(MODE)    + \
+    `GET_V_TOP_BORDER_TICKS(MODE)    + \
+    `GET_V_ACTIVE_VIDEO_TICKS(MODE)  + \
+    `GET_V_BOTTOM_BORDER_TICKS(MODE) + \
+    `GET_V_FRONT_PORCH_TICKS(MODE)     \
+)
+
+`endif /* VGA_VH */

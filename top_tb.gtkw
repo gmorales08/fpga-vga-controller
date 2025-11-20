@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.124 (w)1999-2025 BSI
+[*] Tue Nov 18 19:24:25 2025
+[*]
+[dumpfile] "/home/gabriel/gmd/0PROGRAMACION/FPGA/0PROYECTOS/fpga-vga/build/top_tb.vcd"
+[dumpfile_mtime] "Tue Nov 18 19:19:14 2025"
+[dumpfile_size] 56867759
+[savefile] "/home/gabriel/gmd/0PROGRAMACION/FPGA/0PROYECTOS/fpga-vga/top_tb.gtkw"
+[timestart] 71954490
+[size] 1280 628
+[pos] -46 -46
+*-13.000000 71974920 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top_tb.
+[treeopen] top_tb.TOP.
+[sst_width] 209
+[signals_width] 288
+[sst_expanded] 1
+[sst_vpaned_height] 167
+@28
+top_tb.clk
+top_tb.red_o
+top_tb.green_o
+top_tb.blue_o
+top_tb.hsync_no
+top_tb.vsync_no
+@22
+top_tb.TOP.VGA.r_currentScreenPixel[18:0]
+@23
+top_tb.TOP.VGA.pixel_color[17:0]
+[pattern_trace] 1
+[pattern_trace] 0
